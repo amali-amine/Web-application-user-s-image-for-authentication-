@@ -1,7 +1,11 @@
 const webcam = document.getElementById('wc');
 const nameUser = document.getElementById('name');
 
-var users = {}
+/** dict object storing the features of the user
+ * @key {string} nameUser
+ * @value {tensor} features
+ * */  
+var users = {} 
 
 /**
    * Compute the euclidean distance between two tensors.
