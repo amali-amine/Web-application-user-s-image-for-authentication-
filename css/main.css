@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@-webkit-keyframes transitionIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.body {
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+  background-color: cornsilk;
+  font-size: 18px;
+  height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container h1 {
+  margin: 2em 0;
+}
+
+.container p {
+  line-height: 1.7rem;
+}
+
+.container .left {
+  background: linear-gradient(160deg, #A0CFD3 0%, #70D6D0 100%);
+  padding: 0em;
+}
+
+.container .left h1 {
+  color: #87677B;
+}
+
+.container .left p {
+  color: #8D94BA;
+}
+
+.container .right p {
+  margin: 2em 0 1em;
+}
+
+.container .light {
+  color: #B4EDD2;
+  margin-top: 2em;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.container .right {
+  background: linear-gradient(160deg, #FEC5BB 0%, #E8E8E4 100%);
+  padding: 0.5em;
+  -webkit-animation: transitionIn 0.75s;
+          animation: transitionIn 0.75s;
+}
+
+.container .right h1 {
+  color: #A0CFD3;
+}
+
+.container .right input, .container .right button {
+  width: calc(100%-3em);
+  padding: 0.5em;
+  font-size: 1.3rem;
+  outline: none;
+  margin: 1em;
+}
+
+.container .right .buttons {
+  margin: 10em;
+}
+
+.container .right .buttons button {
+  width: calc(100%-2em);
+  margin: 1em;
+  background: #A0CFD3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 70%;
+  height: 70%;
+}
+
+.container .right .demo h2 {
+  color: #87677B;
+}
+
+@media only screen and (min-width: 700px) {
+  p {
+    line-height: 1.7em !important;
+  }
+  .inner {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 55% auto;
+        grid-template-columns: 55% auto;
+  }
+  .inner .left {
+    text-align: left;
+    padding: 0em;
+    display: -ms-grid;
+    display: grid;
+  }
+  .inner .left .content {
+    padding: 0 3em;
+  }
+  .inner .left h1 {
+    text-align: center;
+    margin: 40px;
+    font-size: 2.1em;
+  }
+  .inner .left h1 span {
+    display: -ms-grid;
+    display: grid;
+  }
+  .inner .left p {
+    margin: 30px;
+  }
+  .inner .left .light {
+    margin: 30px;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=main.css.map */
