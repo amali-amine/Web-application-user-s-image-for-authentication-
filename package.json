@@ -1,0 +1,19 @@
+{
+  "name": "face",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "amine",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow/tfjs": "^3.9.0",
+    "@tensorflow/tfjs-vis": "^1.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.7.6",
+    "typescript": "^4.4.2"
+  }
+}
