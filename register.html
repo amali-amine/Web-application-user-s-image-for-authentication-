@@ -19,9 +19,9 @@
 			<div class="left">
 				<div class='content'>
 					<h1> Siamese Network <span>in Javascript </span> </h1>
-					<p> Web authentification using user's image. This web application contains in the back-end AI system for face recognition 
-						using the one-shot algorithm Siamese network.</p>
-					<p> Your security is my number one priority. The back-end only save the features of your image. Furthermore, it helps us optimize the memory allocation of the heap.</p>
+					<p> Web authentification using user's image. This web application uses in the back-end resnet_v2_50 for face features extraction. In signing up, the user will provide an username and his picture, that they are going to be stored in some database (ex: PostgreSQL).
+						In signing in, the app will compute the euclidean distance between the features of the new image of the webcam in the 'login' page and all features stored in the database. The app will authenticate the user only if the euclidean distance is smaller to a given treshold.</p>
+					<p> The login process will be published soon with an example of a database.</p>
 					<p class='light'>Try it yourself !</p>
 				</div>
 			</div>
